@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7ed;
+    color: #3b2921;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5a3828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #ffd8a8;
+    color: #3b2921;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.autor {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.autor img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria figure {
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 12px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+.galeria figcaption {
+    margin-top: 12px;
+    font-weight: bold;
+}
+body {
+    padding-top: 160px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    z-index: 1000;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 220px;
+    }
+
+    header {
+        height: 220px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+}
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.videos article {
+    flex: 1 1 400px;
+    min-width: 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.videos h3 {
+    margin-top: 0;
+}
+
+.videos iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 8px;
+}
+.portada {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    min-height: calc(100vh - 160px);
+    padding: 40px 20px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.texto-portada {
+    max-width: 700px;
+}
+
+.texto-portada h2 {
+    font-size: 56px;
+    margin: 0 0 15px;
+}
+
+.texto-portada p {
+    font-size: 22px;
+    margin: 0 0 25px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffd8a8;
+    color: #3b2921;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+    .portada {
+        min-height: calc(100vh - 220px);
+    }
+
+    .texto-portada h2 {
+        font-size: 38px;
+    }
+
+    .texto-portada p {
+        font-size: 18px;
+    }
+}
+nav a i {
+    margin-right: 6px;
+}
+footer {
+    padding: 25px 20px;
+    background-color: #5a3828;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 15px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #ffd8a8;
+}
+
+.redes i {
+    margin-right: 6px;
+    font-size: 22px;
+}
+.articulo-blog {
+    display: block;
+}
+
+.articulo-blog h2 {
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+.contenido-blog {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.articulo-blog .imagen-blog {
+    position: static;
+    float: none;
+    width: 40%;
+    height: auto;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.texto-blog {
+    flex: 1;
+    min-width: 0;
+}
+
+.texto-blog p {
+    margin: 0 0 16px;
+}
+
+@media (max-width: 700px) {
+    .contenido-blog {
+        flex-direction: column;
+    }
+
+    .articulo-blog .imagen-blog {
+        width: 100%;
+    }
+}
